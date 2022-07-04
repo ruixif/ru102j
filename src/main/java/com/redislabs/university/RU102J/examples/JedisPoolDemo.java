@@ -8,6 +8,6 @@ public class JedisPoolDemo {
         final JedisPoolConfig poolConfig = new JedisPoolConfig();
         poolConfig.setMaxTotal(64);
         poolConfig.setMaxIdle(64);
-        JedisPool jedisPool = new JedisPool(poolConfig, "redis.enterprise", 6379);
+        JedisPool jedisPool = new JedisPool(poolConfig, "127.0.0.1", 6379);
     }
 }
